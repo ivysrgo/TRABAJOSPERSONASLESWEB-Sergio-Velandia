@@ -1,0 +1,48 @@
+MINIMO DE HU POR CADA RQF
+
+ACTIVIDAD TECHFEST
+Sacar historias de usuarios por cada requerimiento y ajustar la necesidad
+NECESIDAD: Cristian Ramos, estudiante de la universidad del Rosario de MACC, necesita que sus brownies tengan una mayor visibilidad en el mercado de la feria universitaria para poder tener una mayor demanda de clientes, Teniendo en cuenta que los lineamientos de la universidad ahora mismo no le permite hacer esto, el lo quiere manejar de manera digital.
+
+RQF001 Registro de Usuarios con Rol:
+El sistema debe permitir el registro de estudiantes diferenciando roles (comprador o emprendedor/vendedor), solicitando datos básicos como nombre completo, teléfono y correo electrónico institucional. 
+Ususarios: Emprendedores, compradores y admin.
+RQF002 Autenticación e Inicio de Sesión:
+El sistema debe permitir a los usuarios iniciar y cerrar sesión mediante credenciales seguras (correo institucional y contraseña), incluyendo la opción de recuperar contraseña. 
+Ususarios: Emprendedor, comprador y admin.
+RQF003 Gestión del Perfil del Emprendimiento:
+El sistema debe permitir a los vendedores crear y editar la información de su perfil comercial (nombre del emprendimiento, descripción breve, foto de perfil y canales de contacto directo). 
+Usuarios: 4
+RQF004 Publicación y Gestión de Productos (Catálogo):
+El sistema debe permitir a los emprendedores registrar, editar y eliminar productos en su catálogo, especificando nombre, precio, descripción detallada (ej. tamaño o tipo de brownie), fotografías y cantidad disponible en inventario.
+Usuarios: Emprendedores
+RQF005 Carga y Verificación Sanitarias:
+El sistema debe requerir que el vendedor adjunte la documentación sanitaria requerida (certificado de manipulación de alimentos y fecha de caducidad del lote) como condición previa para habilitar la visibilidad de los productos 
+alimenticios.
+Usuarios: Emprendedor y admin
+RQF006 Búsqueda y Filtrado de Productos:
+El sistema debe permitir a los compradores explorar la oferta de productos aplicando filtros por categoría (postres, snacks, bebidas), rango de precios, nombre del vendedor o ubicación dentro del campus.
+Usuarios: compradores y admin
+RQF007 Creación y Gestión de Pedidos:
+El sistema debe permitir al comprador seleccionar uno o varios productos, indicar el punto de entrega acordado dentro de la universidad (ej. viejo verde, crai, casur, etc.) y enviar la solicitud de compra al emprendedor.
+Usuarios:comprador
+RQF008 Seguimiento del Estado del Pedido en Tiempo Real:
+El sistema debe permitir al vendedor actualizar y al comprador visualizar el progreso del pedido en diferentes estados (Pendiente, Aceptado, En camino al punto de entrega, Completado o Cancelado).
+Usuarios:comprador
+RQF009 Gestión de Pagos y Confirmación por Comprobante:
+El sistema debe mostrar los métodos de pago aceptados por el vendedor (transferencia digital, pago móvil o efectivo) y permitir al comprador adjuntar la captura de pantalla o foto del comprobante de pago para su validación.
+Usuarios:comprador y emprendedor
+RQF010 Sistema de Calificaciones y Reseñas (Reviews):
+El sistema debe permitir a los compradores otorgar una puntuación (de 1 a 5 estrellas) y redactar un comentario cuantitativo/cualitativo sobre la calidad del producto y la atención prestada una vez finalizado el pedido.
+Usuarios:comprador y admin.
+
+HU01 - Registro por rol: Como estudiante de la universidad, quiero crear una cuenta especificando si soy comprador o emprendedor, para acceder a las funcionalidades correspondientes a mi rol dentro de la plataforma.
+HU02 - Autenticación e inicio de sesión seguro: Como usuario registrado, quiero iniciar sesión con mi correo institucional y contraseña, para ingresar a mi cuenta personal de manera segura y proteger mis datos.
+HU03 - Configuración del perfil comercial: Como emprendedor universitario, quiero personalizar la información, foto y canales de contacto de mi emprendimiento, para dar a conocer mi marca y generar confianza entre los estudiantes.
+HU04 - Gestión del catálogo de productos: Como emprendedor universitario, quiero crear, editar y eliminar productos con sus precios, detalles, fotos y stock, para mostrar mi oferta de productos actualizada a la comunidad académica.
+HU05 - Registro y validación sanitaria: Como emprendedor de alimentos, quiero cargar mi certificado de manipulación de alimentos y fecha de vencimiento, para cumplir con la normativa universitaria y obtener la aprobación para vender mis productos.
+HU06 - Búsqueda y filtrado de mercancía: Como comprador universitario, quiero filtrar productos por categorías, precio o ubicación en el campus, para encontrar rápidamente las opciones de alimentos que se adapten a mis gustos y presupuesto.
+HU07 - Solicitud de pedido y punto de encuentro: Como comprador universitario, quiero seleccionar artículos e indicar el edificio o plazoleta de entrega dentro de la universidad, para coordinar con el emprendedor un punto de entrega conveniente.
+HU08 - Monitoreo del pedido en tiempo real: Como comprador o vendedor, quiero visualizar y actualizar el estado de la orden (Pendiente, Aceptado, En camino, Entregado), para estar coordinados en el momento exacto de la entrega física.
+HU09 - Carga de comprobantes de pago: Como comprador universitario, quiero visualizar los datos de pago y adjuntar la foto o captura de la transferencia, para validar mi transacción ante el emprendedor antes de recibir el producto.
+HU10 - Valoración y comentarios de la experiencia: Como comprador universitario, quiero calificar con estrellas y escribir una reseña tras recibir mi pedido, para compartir mi opinión y orientar a otros estudiantes en sus compras.
