@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first non ai html</title>
+</head>
+<body>
+    <h1> Wassup homie, we bouncin'</h1>
+    <p> My shit is ice cold bruhhh<br> her name is megan</p><br>
+    <img src = "..\imagenes\PILOO.jpeg" alt = "GENIOO">
+    <img src = "..\imagenes\NI.jpeg" alt = "who this bruhh">
+    <div id="contenedor"></div>
+
+ <!-- colocar imagen varias veces -->
+<script>
+  const contenedor = document.getElementById("contenedor");
+
+  for (let i = 0; i < 10; i++) {
+    const img = document.createElement("img");
+    img.src = "../imagenes/PILOO.jpeg";
+    img.alt = "Imagen repetida";
+    contenedor.appendChild(img);
+  }
+</script>
+
+</body>
+</html>
