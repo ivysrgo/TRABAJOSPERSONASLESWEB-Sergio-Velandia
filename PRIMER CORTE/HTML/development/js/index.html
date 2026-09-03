@@ -13,7 +13,7 @@
     <div id="contenedor"></div>
 
  <!-- colocar imagen varias veces -->
-<script>
+  <script>
   const contenedor = document.getElementById("contenedor");
 
   for (let i = 0; i < 10; i++) {
@@ -22,7 +22,83 @@
     img.alt = "Imagen repetida";
     contenedor.appendChild(img);
   }
-</script>
+  
+  </script>
+
+  <meta charset="UTF-8">
+  <title>Horario</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+
+    th, td {
+      border: 2px solid black;
+      padding: 16px 28px;
+      font-size: 20px;
+    }
+
+    th {
+      font-weight: bold;
+    }
+
+    .desayuno-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .flecha {
+      width: 0;
+      height: 0;
+      border-top: 14px solid transparent;
+      border-bottom: 14px solid transparent;
+      border-left: 20px solid #541634;
+      position: relative;
+    }
+
+    .flecha::before {
+      content: "";
+      position: absolute;
+      top: -6px;
+      right: 20px;
+      width: 24px;
+      height: 12px;
+      background-color: #541634;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Hora</th>
+        <th>Lunes</th>
+        <th>Martes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>7:00 am</td>
+        <td colspan="2">
+          <div class="desayuno-container">
+            <span class="flecha"></span>
+            <span>Desayuno</span>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>8:00 am</td>
+        <td>Reunión</td>
+        <td>Clase</td>
+      </tr>
+    </tbody>
+  </table>
 
 </body>
 </html>
