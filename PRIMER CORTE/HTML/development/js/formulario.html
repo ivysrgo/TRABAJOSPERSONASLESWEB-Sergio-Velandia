@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact form</title>
+</head>
+<body background="development\imagenes\COLORBKG.png">   </body>
+
+<h1>Contact form</h1>
+<p>Please fill in your information and we'll be sending your order in no time.</p>
+
+<form action="#" method="post">
+<table cellspacing="0" border="0">
+
+<tr>
+<td><b>Your Name</b></td>
+<td>
+<input type="text" name="firstname" placeholder="First Name" size="25">
+<input type="text" name="lastname" placeholder="Last Name" size="25">
+</td>
+</tr>
+
+<tr>
+<td><b>Your Email</b></td>
+<td>
+<input type="email" name="email" placeholder="e.g. hello@contact.net" size="55">
+</td>
+</tr>
+
+<tr>
+<td><b>Phone*</b></td>
+<td>
+<input type="text" name="phone1" placeholder="###" size="4" maxlength="3">
+<input type="text" name="phone2" placeholder="###" size="4" maxlength="3">
+<input type="text" name="phone3" placeholder="####" size="5" maxlength="4">
+</td>
+</tr>
+
+<tr>
+<td><b>Message Subject*</b></td>
+<td>
+<select name="subject">
+<option value="order">Order</option>
+<option value="support">Support</option>
+<option value="billing">Billing</option>
+<option value="other" selected>Other</option>
+</select>
+</td>
+</tr>
+
+<tr valign="top">
+<td><b>Message*</b></td>
+<td>
+<textarea name="message" rows="8" cols="60"></textarea>
+</td>
+</tr>
+
+<tr>
+<td><b>Verification*</b></td>
+<td>
+<input type="checkbox" name="verification"> I'm not a robot <img src = "..\imagenes\reCAPTCHA.png" width="100px" height="100px">
+
+</td>
+</tr>
+
+</table>
+
+<br>
+
+<input type="submit" value="SUBMIT FORM">
+
+</form>
+
+</body>
+</html>
