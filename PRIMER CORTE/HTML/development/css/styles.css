@@ -10,7 +10,10 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
-h1{
+h1,p{
+    background-color: blue;
+    color: black;
+    
     
 
 }
