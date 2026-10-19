@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pontifice pablo - Torneo de STOP</title>
+</head>
+<body>
+    <header>
+    <h1>Pontifice Pablo: STOP</h1>
+    <p>Letra de la ronda: <strong>P</strong></p>
+    <nav>
+      <a href="#reglas">Ir a las reglas del torneo</a>
+    </nav>
+    <nav>
+      <a href="#Hoja de respuestas">Ir a la hoja de respuestas</a>
+    </nav>
+  </header>
+  <main>
+    <h2> Tablero de la Ronda 1</h2>
+    <table border="1">
+        <caption>TABLA DE VALIDACION</caption>
+        <thead>
+        <tr>
+          <th scope="col">Jugador</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Lugar</th>
+          <th scope="col">Animal</th>
+          <th scope="col">Objeto</th>
+          <th scope="col">Marca</th>
+          <th scope="col">Comida</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Pancho</th>
+          <td>Paula</td>
+          <td>Pantheon</td>
+          <td>Pantera</td>
+          <td>Paraguas</td>
+          <td>Puma</td>
+          <td>Pizza</td>
+        </tr>
+        <tr>
+           <th scope="row">Pedro</th>
+          <td>Pilar</td>
+          <td>Puerta del sol</td>
+          <td>Pinguino</td>
+          <td>Pincho</td>
+          <td>Pinterest</td>
+          <td>Pescado</td> 
+        </tr>
+        <tr>
+           <th scope="row">Pamela</th>
+          <td>Poncio</td>
+          <td>Plaza España</td>
+          <td>Pescado</td>
+          <td>Plumon</td>
+          <td>Primark</td>
+          <td>Panzerotti</td> 
+        </tr>
+      </tbody>
+    </table>
+
+    <section>
+      <h2 id="Hoja de respuestas">Hoja de respuestas</h2>
+
+      <img src="recursos/logo.png" alt="Escudo del torneo Pontifice Pablo:" width="120" height="120">
+
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Tus respuestas con la letra P</legend>
+
+          <p>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej: Pilar" required
+                   pattern="[Pp][A-Za-zÁÉÍÓÚáéíóúÑñ]{2,}"
+                   title="Debe empezar por la letra P y tener mínimo 3 letras, sin números ni espacios.">
+          </p>
+
+          <p>
+            <label for="lugar">Lugar</label>
+            <input type="text" id="lugar" name="lugar" placeholder="Ej: París" required
+                   pattern="[Pp][A-Za-zÁÉÍÓÚáéíóúÑñ]{2,}"
+                   title="Debe empezar por la letra P y tener mínimo 3 letras, sin números ni espacios.">
+          </p>
+
+          <p>
+            <label for="animal">Animal</label>
+            <input type="text" id="animal" name="animal" placeholder="Ej: Pantera" required
+                   pattern="[Pp][A-Za-zÁÉÍÓÚáéíóúÑñ]{2,}"
+                   title="Debe empezar por la letra P y tener mínimo 3 letras, sin números ni espacios.">
+          </p>
+
+          <p>
+            <label for="objeto">Objeto</label>
+            <input type="text" id="objeto" name="objeto" placeholder="Ej: Paraguas" required
+                   pattern="[Pp][A-Za-zÁÉÍÓÚáéíóúÑñ]{2,}"
+                   title="Debe empezar por la letra P y tener mínimo 3 letras, sin números ni espacios.">
+          </p>
+
+          <p>
+            <label for="marca">Marca</label>
+            <input type="text" id="marca" name="marca" placeholder="Ej: Puma" required
+                   pattern="[Pp][A-Za-zÁÉÍÓÚáéíóúÑñ]{2,}"
+                   title="Debe empezar por la letra P y tener mínimo 3 letras, sin números ni espacios.">
+          </p>
+
+          <p>
+            <label for="comida">Comida</label>
+            <input type="text" id="comida" name="comida" placeholder="Ej: Pizza" required
+                   pattern="[Pp][A-Za-zÁÉÍÓÚáéíóúÑñ]{2,}"
+                   title="Debe empezar por la letra P y tener mínimo 3 letras, sin números ni espacios.">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Datos de la ronda</legend>
+
+          <p>
+            <label for="letra">Letra de la ronda</label>
+            <select id="letra" name="letra">
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+              <option value="G">G</option>
+              <option value="H">H</option>
+              <option value="I">I</option>
+              <option value="J">J</option>
+              <option value="L">L</option>
+              <option value="M">M</option>
+              <option value="N">N</option>
+              <option value="O">O</option>
+              <option value="P" selected>P</option>
+              <option value="R">R</option>
+              <option value="S">S</option>
+              <option value="T">T</option>
+              <option value="U">U</option>
+              <option value="V">V</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="ronda">Número de ronda</label>
+            <input type="number" id="ronda" name="ronda" min="1" max="13" value="1" required>
+          </p>
+        </fieldset>
+
+        <p>
+          <label for="timbre">Timbre de la ronda</label><br>
+          <audio id="timbre" controls>
+            <source src="recursos/timbre.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+          </audio>
+        </p>
+
+        <p>
+          <button type="submit">¡STOP!</button>
+          <button type="reset">Borrar respuestas</button>
+        </p>
+      </form>
+    </section>
+  </main>
+  <aside>
+    <h2 id="reglas">Reglas y categorías</h2>
+
+    <h3>Reglas del torneo</h3>
+    <ol>
+      <li>El parcial es individual. Cada estudiante entrega su propio repositorio.</li>
+      <li>Duración: 120 minutos exactos. El cronómetro es público y no se detiene</li>
+      <li>La letra del torneo se sortea al minuto cero y es la misma para todo el grupo. Todo el contenido que usted invente —nombres, respuestas, nombre del torneo— debe empezar por esa letra.</li>
+      <li>Las rondas son secuenciales: lo que construye en una es el insumo de la siguiente.</li>
+      <li>Al final de cada ronda el profesor anuncia ¡STOP!: todos hacen commit con el formato ronda-NN: descripción. El historial de git es parte de la evaluación.</li>
+      <li>Se permite consultar documentación oficial: MDN, react.dev, getbootstrap.com y la documentación de TypeScript.</li>
+      <li>No se permiten asistentes de inteligencia artificial, código propio de proyectos anteriores ni plantillas descargadas.</li>
+      <li>Todo se escribe durante el parcial, desde una carpeta vacía. Lo único que recibe es el kit del torneo.</li>
+      <li>No se evalúa backend, bases de datos ni estado en React: este parcial cubre HTML, CSS, JavaScript y componentes con props.</li>
+      <li>Cada estudiante tiene dos comodines PISTA (el profesor responde una duda puntual; cuesta el 10 % de esa ronda) y un comodín SALTO (usa el archivo de rescate del kit para continuar; esa ronda vale 0 pero la cadena no se rompe).</li>
+      <li>Si una ronda no le funciona, documente en BITACORA.md qué intentó y qué error obtuvo: eso otorga puntaje parcial.</li>
+      <li>La entrega se hace dentro del tiempo. Lo que llegue después no se evalúa.</li>
+    </ol>
+    <h3>Categorías</h3>
+    <ul>
+      <li>Nombre</li>
+      <li>Lugar</li>
+      <li>Animal</li>
+      <li>Objeto</li>
+      <li>Marca</li>
+      <li>Comida</li>
+    </ul>
+  </aside>
+  <h2 id="reglas">Reglas y categorías</h2>
+  <footer>
+    <p>Sergio / Grupo: 2</p>
+  </footer>
+
+  <script>
+    // Muestra el texto del atributo title como mensaje de error,
+    // tanto si el campo está vacío como si no cumple el pattern.
+    document.querySelectorAll('input[pattern]').forEach((campo) => {
+      campo.addEventListener('invalid', () => campo.setCustomValidity(campo.title));
+      campo.addEventListener('input', () => campo.setCustomValidity(''));
+    });
+  </script>
+</body>
+</html>
